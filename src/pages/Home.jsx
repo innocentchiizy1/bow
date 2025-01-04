@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../styles/Home.css"; // Import home-specific styles
+import "../styles/home.css";
 import TestimonialsSection from "../components/TestimonialsSection";
 import FAQSection from "../components/FAQSection";
 import { Link } from "react-router-dom";
@@ -8,7 +8,6 @@ import Loader from "../components/Loader/Loader";
 // import ContactForm from "../components/ContactForm";
 
 const Home = () => {
-
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -20,54 +19,53 @@ const Home = () => {
     return () => clearTimeout(timer); // Clear the timer on unmount
   }, []);
 
-
   return (
     <>
-        {loading ? (
-      <Loader/> // Use Loader component
-    ) : (
-    <div>
-      {/* Hero Section */}
-      <section className="hero-section">
-        <div className="hero-content">
-          <h1> Innovative Advertising Solutions for Your Brand.</h1>
-          <p>Your Partner in Eye-Catching Advertising</p>
-          <Link to="/contact">
-            <button className="cta-btn">Request a Quote</button>
-          </Link>
-        </div>
-      </section>
+      {loading ? (
+        <Loader /> // Use Loader component
+      ) : (
+        <div>
+          {/* Hero Section */}
+          <section className="hero-section">
+            <div className="hero-content">
+              <h1> Innovative Advertising Solutions for Your Brand.</h1>
+              <p>Your Partner in Eye-Catching Advertising</p>
+              <Link to="/contact">
+                <button className="cta-btn">Request a Quote</button>
+              </Link>
+            </div>
+          </section>
 
-      {/* About Section */}
-      <section className="about-us-section">
-        <div className="about-us-content">
-          <h2>About Bowbonish Ltd</h2>
-          <p>
-            At Bowbonish Ltd, we specialize in cutting-edge branding and
-            advertising solutions. Our mission is to empower businesses with
-            impactful visuals that capture attention and drive engagement. With
-            a passion for creativity and innovation, we deliver outstanding
-            results for our clients.
-          </p>
-          <p>
-            Our vision is to be a trusted leader in the advertising industry,
-            known for reliability and exceptional service. Let us help you make
-            a bold statement with your brand.
-          </p>
-          <a href="/about" className="about-us-btn">
-            Learn More
-          </a>
-        </div>
-        <div className="about-us-image">
-          <img
-            src="https://via.placeholder.com/600x400.png?text=Billboard+Image"
-            alt="About Bowbonish"
-          />
-        </div>
-      </section>
+          {/* About Section */}
+          <section className="about-us-section">
+            <div className="about-us-content">
+              <h2>About Bowbonish Ltd</h2>
+              <p>
+                At Bowbonish Ltd, we specialize in cutting-edge branding and
+                advertising solutions. Our mission is to empower businesses with
+                impactful visuals that capture attention and drive engagement.
+                With a passion for creativity and innovation, we deliver
+                outstanding results for our clients.
+              </p>
+              <p>
+                Our vision is to be a trusted leader in the advertising
+                industry, known for reliability and exceptional service. Let us
+                help you make a bold statement with your brand.
+              </p>
+              <a href="/about" className="about-us-btn">
+                Learn More
+              </a>
+            </div>
+            <div className="about-us-image">
+              <img
+                src="https://via.placeholder.com/600x400.png?text=Billboard+Image"
+                alt="About Bowbonish"
+              />
+            </div>
+          </section>
 
-      {/* Testimonials Section */}
-      {/* <section className="testimonials-section">
+          {/* Testimonials Section */}
+          {/* <section className="testimonials-section">
       <h2>What Our Clients Say</h2>
       <div className="testimonials">
         <div className="testimonial">
@@ -93,17 +91,17 @@ const Home = () => {
         </div>
       </div>
     </section> */}
-      <TestimonialsSection />
+          <TestimonialsSection />
 
-      {/* FAQs Section */}
-      <FAQSection />
+          {/* FAQs Section */}
+          <FAQSection />
 
-      {/* Contact Form Section */}
-      <section className="contact-form-section">
-        {/* <ContactForm /> */}
-      </section>
-    </div>
-    )}
+          {/* Contact Form Section */}
+          <section className="contact-form-section">
+            {/* <ContactForm /> */}
+          </section>
+        </div>
+      )}
     </>
   );
 };
