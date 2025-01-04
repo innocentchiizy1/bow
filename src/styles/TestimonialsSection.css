@@ -1,0 +1,120 @@
+/* Testimonials Section Styling */
+.testimonials-section {
+  padding: 50px 20px;
+  background-color: #f4f8fb;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2.2rem;
+  color: blue;
+  margin-bottom: 30px;
+}
+
+.testimonials {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden; /* Hide extra items */
+}
+
+/* Styling for the testimonial container */
+.testimonial-cards {
+  width: 100%;
+  max-width: 900px; /* Larger width to accommodate 3 testimonials for larger screens */
+  display: flex; /* Flexbox instead of grid */
+  gap: 20px;
+  transition: transform 0.5s ease;
+}
+
+/* Individual Testimonial Style */
+.testimonial {
+  background-color: #fff;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  flex-shrink: 0; /* Ensures each testimonial does not shrink */
+  width: 100%; /* Each testimonial takes full width inside the flex container */
+}
+
+/* Testimonial Quote Styling */
+.testimonial-quote {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+/* Testimonial Name Styling */
+.testimonial-name {
+  font-weight: bold;
+  color: rgb(23, 161, 216);
+}
+
+/* Hover effect for testimonial */
+.testimonial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Navigation Arrows */
+.testimonial-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: blue;
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for arrows */
+.testimonial-nav:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Left Arrow Styling */
+.testimonial-nav.prev {
+  left: 10px;
+}
+
+/* Right Arrow Styling */
+.testimonial-nav.next {
+  right: 10px;
+}
+
+/* Mobile View Adjustments */
+@media screen and (max-width: 768px) {
+  .testimonials {
+      flex-direction: column; /* Stack items vertically for mobile */
+      gap: 0; /* No gap */
+  }
+
+  .testimonial-cards {
+      flex-direction: column; /* One testimonial per column */
+      width: 100%; /* Full width */
+      display: block; /* Remove horizontal flex */
+      overflow: hidden;
+  }
+
+  /* Keep each testimonial at full width for mobile */
+  .testimonial {
+      width: 100%; 
+      flex-shrink: 0; /* Prevent shrinking */
+      display: block; /* Ensure it's block-level */
+  }
+
+  .testimonial-nav {
+      font-size: 2rem;
+      padding: 8px;
+  }
+}

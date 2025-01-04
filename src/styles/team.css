@@ -1,0 +1,91 @@
+.team-section {
+  padding: 50px 20px;
+  background-color: #f4f8fb;
+  text-align: center;
+}
+
+.team-heading {
+  font-size: 2.5rem;
+  color: blue;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.team-introduction {
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Always two members per row */
+  gap: 30px;
+  justify-items: center;
+}
+
+.team-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* Makes cards uniform in size */
+  max-width: 400px; /* Limits the card width */
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.team-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-name {
+  font-size: 1.5rem;
+  color: blue;
+  margin-bottom: 5px;
+}
+
+.team-role {
+  font-size: 1rem;
+  color:  rgb(23, 161, 216);
+  margin-bottom: 15px;
+}
+
+.team-description {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.team-socials a {
+  color:  rgb(23, 161, 216);
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.team-socials a:hover {
+  color: #d85600;
+  font-size: 30px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+
+  .team-photo {
+    width: 100px;
+    height: 100px;
+  }
+}

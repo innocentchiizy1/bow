@@ -1,0 +1,138 @@
+.footer {
+  background-color: #10273a ;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-about,
+.footer-links,
+.footer-newsletter,
+.footer-socials {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer h4 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: rgb(23, 161, 216);
+}
+
+.footer p,
+.footer ul,
+.footer li {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: white;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links li a:hover {
+  color:blue;
+}
+
+.footer-newsletter form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer-newsletter input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.footer-newsletter button {
+  padding: 10px 20px;
+  background-color: rgb(23, 161, 216);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.footer-newsletter button:hover {
+  background-color:blue
+}
+
+.footer-socials .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-socials .social-icons a {
+  font-size: 1.5rem;
+  color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color:#000;
+  border-radius: 40%;
+  transition: background-color 0.3s;
+}
+
+.footer-socials .social-icons a:hover {
+  background-color:blue;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+  border-top: 1px solid white;
+  padding-top: 15px;
+  font-size: 0.9rem;
+}
+
+.footer-bottom ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 10px;
+  padding: 0;
+  gap: 15px;
+}
+
+.footer-bottom ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-bottom ul li a:hover {
+  color:blue;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-bottom ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

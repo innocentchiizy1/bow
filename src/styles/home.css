@@ -1,0 +1,246 @@
+/* Home.css */
+/* Home.css */
+.hero-section {
+  height: 100vh !important;
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+  url("../assets/1.jpg") !important; 
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.cta-btn {
+  background-color: rgb(23, 161, 216);
+  
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: blue;
+}
+
+/* About Section */
+.about-us-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #f4f8fb;
+  gap: 30px;
+}
+
+.about-us-content {
+  flex: 1 1 45%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.about-us-content h2 {
+  font-size: 2rem;
+  color: blue;
+  margin-bottom: 15px;
+}
+
+.about-us-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.about-us-btn {
+  background-color: rgb(23, 161, 216);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.about-us-btn:hover {
+  background-color: blue;
+}
+
+.about-us-image {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.about-us-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .about-us-section {
+    flex-direction: column;
+    padding: 30px 10px;
+  }
+
+  .about-us-content {
+    max-width: 100%;
+  }
+}
+
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 50px 20px;
+  background-color: #f4f8fb;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2.2rem;
+  color: #3e5a71;
+  margin-bottom: 30px;
+}
+
+.testimonials {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 300px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.testimonial-quote {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  color: #3e5a71;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .testimonials {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .testimonial {
+    max-width: 100%;
+  }
+}
+
+/* FAQs Section */
+.faq-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.faq-section .faq {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+  padding: 60px 20px;
+  background-color: #fafafa;
+}
+
+/* Loader Styles */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f8fb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.loader {
+  border: 10px solid #e0e0e0;
+  border-top: 10px solid #ff6600;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Home Page Content */
+.hero-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ff6600;
+  color: white;
+}
+
+.services-overview {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.home-contact {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f4f8fb;
+}

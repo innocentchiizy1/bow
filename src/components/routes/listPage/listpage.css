@@ -1,0 +1,38 @@
+.listPage {
+  display: flex;
+  height: 100%;
+  overflow: scroll;
+}
+
+@media (max-width: 768px) {
+  .listPage {
+    flex-direction: column;
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 576px) {
+  .listPage {
+    flex-direction: column;
+    overflow: scroll;
+  }
+}
+
+.listPage .listContainer {
+  flex: 3;
+}
+
+.listPage .listContainer .wrapper {
+  height: 100%;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  overflow-y: scroll;
+}
+
+.listPage .mapContainer {
+  flex: 2;
+  height: 100%;
+  background-color: red;
+}
